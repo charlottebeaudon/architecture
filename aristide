@@ -313,41 +313,41 @@
 
 			
 		<div class="mydiv">
-			<div class="mydivheader" id="one"><img src="./aristide/2S23_BA6_GLC_BEAUDON_RÖMER_model_1to100.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="sreenshotfinal_04.jpg" width="428" height="284"></div>
+			<div class="mydivheader" id="one"><img src="./battery/2S23_BA6_GLC_BEAUDON_RÖMER_model_1to100.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="sreenshotfinal_04.jpg" width="428" height="284"></div>
 		  </div>
 		  <div class="mydiv">
-			<div class="mydivheader" id="two"><img src="./aristide/S23_BA6_BEAUDON_RÖMER_ika.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="02_04.20.png" width="496" height="350"></div>
+			<div class="mydivheader" id="two"><img src="./battery/S23_BA6_BEAUDON_RÖMER_ika.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="02_04.20.png" width="496" height="350"></div>
 		  </div>
 		  <div class="mydiv">
-			<div class="mydivheader" id="three"><img src="./aristide/S23_BA6_BEAUDON_RÖMER_ika2.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="03_06_2.png" width="496" height="350"></div>
+			<div class="mydivheader" id="three"><img src="./battery/S23_BA6_BEAUDON_RÖMER_ika2.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="03_06_2.png" width="496" height="350"></div>
 		  </div>
 		  <div class="mydiv">
 			<div class="mydivheader" id="four">
-			<img src="./aristide/S23_BA6_GLC_BEAUDON_RÖMER_axonometrie.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="03_06_4.png" width="1412" height="1000" ></div>
+			<img src="./battery/S23_BA6_GLC_BEAUDON_RÖMER_axonometrie.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="03_06_4.png" width="1412" height="1000" ></div>
 		  </div>
 		  <div class="mydiv">
-			<div class="mydivheader" id="five"><img src="./aristide/S23_BA6_GLC_BEAUDON_RÖMER_fragments.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="04_05_1.png" width="248" height="350"></div>
+			<div class="mydivheader" id="five"><img src="./battery/S23_BA6_GLC_BEAUDON_RÖMER_fragments.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="04_05_1.png" width="248" height="350"></div>
 		  </div>
 		  <div class="mydiv">
-			<div class="mydivheader" id="six"><img src="./aristide/S23_BA6_GLC_BEAUDON_RÖMER_model_1to100.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="6-100.jpg" width="428" height="284"></div>
+			<div class="mydivheader" id="six"><img src="./battery/S23_BA6_GLC_BEAUDON_RÖMER_model_1to100.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="6-100.jpg" width="428" height="284"></div>
 		  </div>
 		  <div class="mydiv">
-			<div class="mydivheader" id="seven"><img src="./aristide/S23_BA6_GLC_BEAUDON_RÖMER_plan.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="07_05_11.png" width="836" height="1500"></div>
+			<div class="mydivheader" id="seven"><img src="./battery/S23_BA6_GLC_BEAUDON_RÖMER_plan.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="07_05_11.png" width="836" height="1500"></div>
 		  </div>
 		   <div class="mydiv">
-			<div class="mydivheader" id="height"><img src="./aristide/S23_BA6_GLC_BEAUDON_RÖMER_screen-shot.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="7-100.png" width="404" height="200"></div>
+			<div class="mydivheader" id="height"><img src="./battery/S23_BA6_GLC_BEAUDON_RÖMER_screen-shot.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="7-100.png" width="404" height="200"></div>
 		  </div>
 		  <div class="mydiv">
-			<div class="mydivheader" id="nine"><img src="./aristide/S23_BA6_GLC_BEAUDON_RÖMER_screen-shot03.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="12_04_12.png" width="384" height="216"></div>
+			<div class="mydivheader" id="nine"><img src="./battery/S23_BA6_GLC_BEAUDON_RÖMER_screen-shot03.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="12_04_12.png" width="384" height="216"></div>
 		  </div>
 		  <div class="mydiv">
-			<div class="mydivheader" id="ten"><img src="./aristide/S23_BA6_GLC_BEAUDON_RÖMER_screen-shot031.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="Annotation 2020-06-06 105225.png" width="408" height="216"></div>
+			<div class="mydivheader" id="ten"><img src="./battery/S23_BA6_GLC_BEAUDON_RÖMER_screen-shot031.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="Annotation 2020-06-06 105225.png" width="408" height="216"></div>
 		  </div>
 		  <div class="mydiv">
-			<div class="mydivheader" id="eleven"><img src="./aristide/S23_BA6_GLC_BEAUDON_RÖMER_screen-shot032.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="DESK (14).jpg" width="408" height="216"></div>
+			<div class="mydivheader" id="eleven"><img src="./battery/S23_BA6_GLC_BEAUDON_RÖMER_screen-shot032.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="DESK (14).jpg" width="408" height="216"></div>
 		  </div>
 		  <div class="mydiv">
-			<div class="mydivheader" id="twelve"><img src="./aristide/S23_BA6_GLC_BEAUDON_RÖMER_section.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="sreenshotfinal_05.jpg" width="3114" height="360"></div>
+			<div class="mydivheader" id="twelve"><img src="./battery/S23_BA6_GLC_BEAUDON_RÖMER_section.jpg" ondblclick="enlargeImg(this)" onclick="resetImg(this)" alt="sreenshotfinal_05.jpg" width="3114" height="360"></div>
 		  </div>
 		 
 
