@@ -2,74 +2,224 @@
 <html>
       
 <head>
-    <style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
 	
-			.dropdown {
-  position: relative;
-  display: inline-block;
-text-decoration: none !important;
+  .header {
+			position: sticky;
+			  top: 0;
+			  z-index: 999;
+		}
+		
+		.resume {
+			font-size: 1vw;
+			font-style: normal;
+			margin-top: 2vh;
+			width: 30vw;
+			text-align:justify;
+			position: left;
+		}
+		
+		span { 
+		  display: inline-block;
+		  margin:1em;
+		}
+		
+		.flip_V { 
+		  transform: scale(1, -1); 
+		  color: rgb(137, 137, 137);
+		}
+    body, html {
+			width: 100vw;
+			height: 100vh;
+			transform: scale(0.90);
+			  font-family: Monospace, Arial;
+			  overflow-x:hidden;
+		}
+		
+		/*animation*/
+		.r3bis {
+			transform: rotate(-20deg);
+			display: inline-block;
+		}
+		@keyframes mymove {
+		  50% {transform: rotate(360deg);}
+		}
+		.r3bis {
+		  margin: auto;
+		  animation: mymove 8s infinite;
+		}
+
+/* Designing for scroll-bar */
+ ::-webkit-scrollbar {
+   width: 5px;
+}
+
+/* Track */
+  ::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 5px;
+}
+
+.word {
+    letter-spacing: 0.1vh;
+    font: size 0.1vh;;
+    line-height:1vw;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    width: 100%;
+    display: inline-block
+    
+}
+
+.r1,.r2,.r4 {
+  margin: auto;
+  animation: mymove 8s infinite;
+}
+
+.r1bis,.r2bis,.r4bis{
+  margin: auto;
+  animation: mymove2 13s infinite;
+}
+
+.r3,.r3bis {
+  margin: auto;
+  animation: mymove 5s infinite;
+}
+
+.r1 {
+    transform: rotate(10deg);
+    display: inline-block;
+}
+.r2 {
+    transform: rotate(15deg);
+    display: inline-block;
+}
+.r3 {
+    transform: rotate(20deg);
+    display: inline-block;
+}
+.r4 {
+    transform: rotate(25deg);
+    display: inline-block;
+}
+.r1bis {
+    transform: rotate(-10deg);
+    display: inline-block;
+}
+.r2bis {
+    transform: rotate(-15deg);
+    display: inline-block;
+}
+.r3bis {
+    transform: rotate(-20deg);
+    display: inline-block;
+}
+.r4bis {
+    transform: rotate(-25deg);
+    display: inline-block;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(360deg);}
+}
+@keyframes mymove2 {
+  50% {transform: rotate(666deg);}
+}
+
+.sign1{
+  color:red;
+  font-size:1000%;
+  position:absolute;
+  top:600px;
+  right:550px;
   
 }
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-
-  min-width: 80px;
-
-  z-index: 1;
- 
+.sign2{
+  color:red;
+  font-size:1000%;
+  position:absolute;
+  top: 260px;
+  right:350px;
 }
 
-.dropdown-content a {
-  color: #483D8B;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  font-size: 19px;
-
-} 
-a, a:hover,  a:active {
-      text-decoration: none;
-      color: inherit;
- }
-
-.dropdown-content a:hover {color:#DC143C;}
-
-
-.dropdown:hover .dropdown-content {display: flex;}
-
-.dropdown:hover .dropbtn {color:black;}
-
-	
-	
-	#twentyheight{
-	position: absolute;
-	top: 2000px;
-	}
-
-body, html {
- 
-  font-family: Monospace, Arial;
-  justify-content: center;
-  align-items: center;
-  background: white;
-  width: 100vh;
-	height: 100vh;
-	transform: scale(0.8);
-	
+.sign3{
+  color:red;
+  font-size:1000%;
+  position:absolute;
+  top:600px;
+  right:550px;
+  z-index: -1;
 }
+
+/* Button */	
+.dropdown {
+			text-decoration: none !important;
+			color:rgb(0, 0, 0);
+			font-size:150%; 
+			font-style: italic;
+			text-align: right;
+			margin: 1em;
+		}
+		
+		.dropdown-content {
+			display: none;
+		}
+		
+		.dropdown-content a {
+		  color: #483D8B;
+		  padding: 12px 16px;
+		  text-decoration: none;
+		  display: block;
+		}
+		
+		a, a:hover,  a:active {
+			text-decoration: none;
+			color: inherit;
+			color:red;
+      margin: 1em;
+		}
+		
+		.dropdown-content a:hover {color:transparent;}
+		
+		.dropdown:hover .dropdown-content {display: flex;}
+		
+		.dropdown:hover .dropbtn {color:#000000;}
+		
+		
+		
+		
+		/* pictures */
+		.img {
+			width:100%;
+		}
+					
+		.mydiv {
+			position: absolute;
+			z-index: -9;
+			scale: 60%;
+		}
+		
+		.mydivheader {
+			padding: 10px;
+			cursor: move;
+			z-index: -10; 
+		}
+
+	
 
 .curri {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 20vh;
+  left: 20vw;
+  z-index: -1;
 }
-
-
-
-
-
 
 @keyframes show {
   93% {
@@ -87,11 +237,9 @@ p span {
   display: block;
   position: relative;
   vertical-align: top;
-  top: 200px;
   color: transparent;
   white-space: nowrap;
-  font-size: 22px;
-  line-height: 2em;
+  line-height: 1em;
 }
 
 .span0:before {
@@ -129,11 +277,11 @@ p span {
   }
   
 .span1:hover:before {
-  animation: random2 0.8s linear forwards;
+  animation: random3 0.8s linear forwards;
 }
 
 .span2:before {
-  content: 'jsfpaf68fgmwpfßw?jdvsöpa-ejo2o5&}F$hfkhga2536%%';
+  content: 'jsfpaf68fgmwpfßw?jdvsöpa-ejo2o5&ad}F9387451=)$hfkhga253oierut4309uákfdlmvz6%%';
   position: absolute;
   width: 100%;
   top: 0;
@@ -148,11 +296,11 @@ p span {
   }
 
 .span2:hover:before {
-  animation: random3 0.8s linear forwards;
+  animation: random2 0.8s linear forwards;
 }
 
 .span3:before {
-  content: 'alnvc...blpzjmwir842ü=?<KFWLHG<ÖJGGXlncööx-nmk';
+  content: 'alnvc...blpzjmwir842ü=?<KFWLHG<ÖJG¡¡¡¡!"&#451||-dflaña,}}]]lsdmGXlncööx-nmk';
   position: absolute;
   width: 100%;
   top: 0;
@@ -167,11 +315,11 @@ p span {
   }
   
 .span3:hover:before {
-  animation: random3 0.8s linear forwards;
+  animation: random1 0.8s linear forwards;
 }
 
 .span4:before {
-  content: 'lepöv,mmmsnaleif985öölg553n3m+m+d.x.yy<nnaxbbbbxvcvvcsskldööaß20==DIuhakkcjalödö-dbvqrew';
+  content: 'lepöv,mmmsnaleifxbbbbxvcvvcsskldööaß20==DIuhakkcjalödö-dbvqrew';
   position: absolute;
   width: 100%;
   top: 0;
@@ -186,10 +334,10 @@ p span {
   }
   
 .span4:hover:before {
-  animation: random1 0.8s linear forwards;
+  animation: random3 0.8s linear forwards;
 }
 .span5:before {
-  content: '---++++++++++rkgnjx(§$)()%(/UEUADQzxfqz111!!!"$d9fgnhf nvvvsuai8/xksddycyxassdjfölrjggrkj';
+  content: '---++++++++++rkgnjxQzxfqz111!!!"$vcyxassdjfölrjggrkj';
   position: absolute;
   width: 100%;
   top: 0;
@@ -204,10 +352,10 @@ p span {
   }
   
 .span5:hover:before {
-  animation: random1 0.8s linear forwards;
+  animation: random4 0.8s linear forwards;
 }
 .span6:before {
-  content: 'ckmmcc99v9veieje908ohehdcjcddez-__433_zezezezzezzdcaga';
+  content: 'ckmmcc99v9veieje908ohehdcj238776%$°"°!cddez-__433s,dnm}´+-.-..Z.,Zlmn_zezezezzezzdcaga';
   position: absolute;
   width: 100%;
   top: 0;
@@ -225,7 +373,7 @@ p span {
   animation: random3 0.8s linear forwards;
 }
 .span7:before {
-  content: 'r0hbor958&§749rrgdw5$Sscccnv.,-n.n,n.m-tpfqta<cx>g<hamnb,2"I""""""""""""<kfbcmvitzzp"e';
+  content: 'r0hbor958&§749rrgdw5$Sscccnv.,-n.n,n.m-tpfqta<cx>g<hamnb,2"I"""**l""""""¿¿¿"""<kfbcmvitzzp"e';
   position: absolute;
   width: 100%;
   top: 0;
@@ -262,7 +410,7 @@ p span {
 }
 
 .span9:before {
-  content: '2109ß3ßßßjdfhs6/*/;;;;,;;;-a-_,sllaljz!!!!367781ubxbzdaaa';
+  content: '2109ß3ßßßjdfhs6 JHS  /*/;;;;,;;;-a-_,sllaljz!!!!367781ubxb8492SBMnnzda"#;lnjadnla09aa';
   position: absolute;
   width: 100%;
   top: 0;
@@ -277,7 +425,7 @@ p span {
   }
   
 .span9:hover:before {
-  animation: random2 0.8s linear forwards;
+  animation: random1 0.8s linear forwards;
 }
 .span10:before {
   content: '///()=(=("Tdgalouu7%§40öf(==szqsp___DihdöaßöPUFN_';
@@ -298,7 +446,7 @@ p span {
   animation: random3 0.8s linear forwards;
 }
 .span11:before {
-  content: 'lo)993fpöcbalaöshfhfoi4984bccnc cck';
+  content: 'lo)993fpöcbalaöshfhfoi4984bccnknsa,a,kjdvwchada,J.KXMNnc cck';
   position: absolute;
   width: 100%;
   top: 0;
@@ -371,6 +519,66 @@ p span {
 .span14:hover:before {
   animation: random4 0.8s linear forwards;
 }
+
+.span15:before {
+  content: 'WQKÑLMDÑLlmmsml,alql+*~~~~~~~~****~~~~~&&&7820~~~~~~';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: black;
+  }
+
+.span15:hover {
+  animation: show 0.8s linear forwards;
+  }
+  
+.span15:hover:before {
+  animation: random1 0.8s linear forwards;
+}
+
+.span16:before {
+  content: '<lkefnm.,<sldlsewkklkjlklksan-{.-...lmq,mmmmsnblmddndsk<';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: black;
+  }
+
+.span16:hover {
+  animation: show 0.8s linear forwards;
+  }
+  
+.span16:hover:before {
+  animation: random3 0.8s linear forwards;
+}
+
+.span17:before {
+  content: 'j´´pdñllsñl,nd,.mseal,s,,,smdn1uhjsam|°¬¬¬¬¬¬';
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  text-indent: 0;
+  color: black;
+  }
+
+.span17:hover {
+  animation: show 0.8s linear forwards;
+  }
+  
+.span17:hover:before {
+  animation: random4 0.8s linear forwards;
+}
+
+
+
 
 
 @keyframes random1 {
@@ -509,56 +717,66 @@ p span {
     content: '';
   }
 }
-
+.r3bis {
+    transform: rotate(-20deg);
+    display: inline-block;
+}
+@keyframes mymove {
+  50% {transform: rotate(360deg);}
+}
+.r3bis {
+  margin: auto;
+  animation: mymove 8s infinite;
+}
 
 </style>
-</head>
-
-<body>
-
-	<div class="dropdown">
-		<button class="dropbtn"> <font size="+2">Works  </font></button>
-  
-			<div class="dropdown-content">
-				<a href="elke.html">Hysteria of Penelope</a>
-				<a href="stage.html">La Scala Provence Avignon</a>
-				<a href="hannes.html">Oaxaca Sanatorium</a>
-				<a href="tschapeller.html">Wreck for Two</a>
-				<a href="LACRE.html">La+ Creature </a>
-				<a href="michelle.html"> Untitled</a>
-			</div>
-	</div>
-	
-	<div class="dropdown">
-		<button class="dropbtn"><a href="CV.html"> <font size="+2">Curriculum Vitae</font></button></a> 
-		<div class="dropdown-content"></div>
-	</div>
-	
-    <div class="dropdown">
-		<button class="dropbtn"><font size="+2"><a href="about.html">Contact</font></button></a>
-		<div class="dropdown-content"></div>
-	</div>
 
    
+
+<body>
+  <div class="header">
+    <span class='flip_V'>charlotte beaudon architecture portefolio ©</span>
+    <span class="r3bis">|</span>
+    </div>
+    
+    <a class="sign1" href="tschapeller.html" class="button" >-</a>
+    <div class="dropdown">
+      <button class="dropbtn" style="background-color: transparent; border: none; " >
+      <a class="sign2" href="about.html" class="button" >+</a>
+    <div class="dropdown">
+      <button class="dropbtn" style="background-color: transparent; border: none; " >
+      
+      
+
+    <div class="dropdown">
+      <button class="dropbtn" style="background-color: transparent; border: none; " ><a href="MAIN.html" style="font-style: italic;text-decoration: line-through;"><h2>Home</h2></button></a>
+ </div>
+  
 	<p class="curri">
+    </br></br></br></br>
 				<span class= "span0">Paris/Vienna 1995-</span></br></br></br></br>
-				<span class= "span1">Since 2019 Bachelor in Architecture_Akademie der Bildenden Künste Wien</span>
-				<span class= "span2">SS 2022  ERASMUS scholarship_Universität der Künste Berlin</span>
-				<span class= "span3">WS 2018-2019 Bachelor in Architecture_RWTH Aachen</span>
-				<span class= "span4">WS 2017-2018 Master Management and International Business_Université Paris-Est Créteil</span>
-				<span class= "span5">2014-2017 Bachelor Administration and Business Management_Université Paris-Est Créteil</span>
-				<span class= "span6">SS 2017 ERASMUS scholarship_Georg-August-Universität Göttingen</span>
-				<span class= "span7">2013-2014 Economic and Commercial Preparatory Class_Lycée Claude Bernard Paris XVI</span>
-				<span class= "span8">2013 Baccalauréat in Sciences_Lycée Maurice Ravel Paris XX</span></br></br>
-				<span class= "span9">02/22-04/22 Internship_Artefact_Le Viaduc des Arts Paris</span></br></br>
-				<span class= "span10">+++++ Rhino_3D Printing_3D Scan_Laser Cutting</span>
-				<span class= "span11">+++ Adobe Suite_Blender_Grasshopper</span>
-				<span class= "span12">++ Unity_Supercollider_Arduino/Raspberry Pi_HTML/CSS</span></br></br>
-				<span class= "span13">+++++++ French +++++ English +++ German</span></br></br>
-				<span class= "span14">2014-2021 Various seasonal jobs</span><br><br>
-				<span class= "span15">ztu56i5i77i</span><br><br>
+        <span class= "span1">Since 2023 Master in Architecture_Akademie der Bildenden Künste Wien</span>
+        <span class= "span2">WS 2023 Bilateral Exchange_Pontificia Universidad Católica de Chile Santiago</span>
+				<span class= "span3">2019-2023 Bachelor Degree in Architecture_Akademie der Bildenden Künste Wien</span>
+				<span class= "span4">SS 2022  ERASMUS scholarship_Universität der Künste Berlin</span>
+				<span class= "span5">WS 2018-2019 Bachelor in Architecture_RWTH Aachen</span>
+				<span class= "span6">WS 2017-2018 Master Management and International Business_Université Paris-Est Créteil</span>
+				<span class= "span7">2014-2017 Bachelor Degree Administration and Business Management_Université Paris-Est Créteil</span>
+				<span class= "span8">SS 2017 ERASMUS scholarship_Georg-August-Universität Göttingen</span>
+				<span class= "span9">2013-2014 Economic and Commercial Preparatory Class_Lycée Claude Bernard Paris XVI</span>
+				<span class= "span10">2013 Baccalauréat in Sciences_Lycée Maurice Ravel Paris XX</span></br></br>
+        <span class= "span11">10/22-02/23 Internship_Delugan Meissl Associated Architects Vienna</span>
+				<span class= "span12">02/22-03/22 Internship_Artefact_Le Viaduc des Arts Paris</span></br></br>
+				<span class= "span13">+++++ Rhino_3D Printing_3D Scan_Laser Cutting</span>
+				<span class= "span14">++++ Adobe Suite_Blender_Grasshopper_Enscape</span>
+				<span class= "span15">+++ Unity_Supercollider_Max/MSP_Ableton_Arduino/Raspberry Pi_HTML/CSS</span></br></br>
+				<span class= "span16">+++++++ French +++++ English +++ German + Spanish</span></br></br>
+				<span class= "span17">2014-2022 Various seasonal jobs</span><br><br>
+			
 
 	</p>
+
+
 
 </body>
 
